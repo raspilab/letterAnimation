@@ -1,0 +1,58 @@
+body { 
+	font-family: "Neuton", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	background: #090d00; 
+	color: rgba(255,255,255,.25); 
+	text-align: center; 
+	margin: 0 
+}
+
+p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
+  
+p span{
+
+  	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	display: block;
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+	background: url(animated-text-fill.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: rsplab 80s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+
+@-webkit-keyframes rsplab {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(font/oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Neuto;
+    src: url(font/Neuton/Neuton-Regular.ttf);
+}
